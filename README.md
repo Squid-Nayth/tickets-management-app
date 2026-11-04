@@ -71,9 +71,9 @@ stateDiagram-v2
 
 ---
 
-## 🏗️ Architecture Technique Cible (V1)
+## 🏗️ Architecture Technique Cible
 
-Pour corriger les failles du système initial (connexion en `root` MySQL, HTTP en clair, uploads dans le dossier public, secrets dans Git), l'architecture repose sur un modèle simple, clair et adapté au niveau BTS : **un frontend React et une API Express minimaliste en TypeScript**.
+Pour corriger les failles du système initial (connexion en `root` MySQL, HTTP en clair, uploads dans le dossier public, secrets dans Git), l'architecture repose sur un modèle simple : **un frontend React et une API Express en TypeScript**.
 
 ```mermaid
 flowchart TD
@@ -99,9 +99,7 @@ flowchart TD
 
 ---
 
-## 🛡️ Exigences Techniques & Sécurité (Simples & Concrètes)
-
-Pour valider les compétences du **Bloc 3 (Cybersécurité)**, chaque fonctionnalité doit respecter ces 7 règles simples :
+## Exigences Techniques & Sécurité (Simples & Concrètes)
 
 1. **Pas de compte root** :
    * L'application se connecte à MySQL avec un utilisateur dédié (`securedesk_user`) ayant uniquement les droits utiles (`SELECT`, `INSERT`, `UPDATE`, `DELETE`).
@@ -138,9 +136,9 @@ Conformément au principe de **minimisation des données** (Art. 5 RGPD) :
 
 ---
 
-## 📋 Feuille de Route par Étapes
+## Feuille de Route par Étapes
 
-Le projet peut être développé pas à pas de manière très progressive :
+Le projet vas être développé pas à pas de manière très progressive :
 
 * **Étape 1 — Base de données & Connexion :** Créer la base MySQL, l'utilisateur dédié et tester la connexion depuis un fichier `db.ts` avec `.env`.
 * **Étape 2 — Authentification simple :** Créer l'inscription/connexion avec hash `bcrypt`, et le formulaire de login côté React.
@@ -152,7 +150,7 @@ Pour les consignes de travail en équipe et l'usage de Git, consultez le [Guide 
 
 ---
 
-## 📂 Structure Simple du Projet
+## Structure 
 
 Une organisation légère et directe, facile à prendre en main :
 
