@@ -45,7 +45,7 @@ Utilisez des messages courts et clairs avec un préfixe simple :
 Avant de pousser du code, vérifiez ces 4 règles obligatoires :
 
 1. **Aucun mot de passe dans Git** : Ne commitez jamais vos fichiers `.env` ou vos mots de passe de base de données.
-2. **Pas d'injections SQL** : Utilisez toujours des requêtes préparées (`prepare()` et `execute()`).
+2. **Pas d'injections SQL** : Utilisez toujours des requêtes préparées ou un ORM (jamais de concaténation de variables dans les requêtes SQL).
 3. **Protection des uploads** : Ne laissez pas un utilisateur envoyer n'importe quel fichier (autoriser uniquement PDF, PNG, JPG, et stocker hors du dossier public).
 4. **Respect du RGPD** : Ne collectez que le nécessaire (nom, prénom, email pro). Ne demandez jamais de numéro de sécurité sociale, adresse personnelle ou photo d'identité.
 
